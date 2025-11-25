@@ -2,27 +2,14 @@
 
 This project simulates a smart elevator control system that efficiently handles both inner requests (from passengers inside the elevator) and outer requests (from people waiting on different floors). The system optimizes elevator movement to minimize travel time while maintaining proper elevator operation protocols.
 
-## 🎯 Key Features
-
-- **Dual Request Processing System**: 
-  - **Inner Requests**: Destination floors from passengers inside the elevator
-  - **Outer Requests**: Pickup requests with directional preference from waiting passengers
-- **Intelligent Path Optimization**: Calculates optimal routes to minimize total travel time
-- **Real-Time Status Monitoring**: Tracks elevator position, movement direction, and operational state
-- **Interactive Console Interface**: User-friendly command-line interaction with validation
-- **Comprehensive Testing**: Full unit test coverage with FluentAssertions
-- **Modular Architecture**: Clean separation of concerns across multiple projects
-
-## 🏢 System Specifications
+## System Specifications
 
 - **Floor Range**: This is a 10-storey building from floor number 1 (level 1 or ground floor, both refer to the same floor) to 10 (top floor)
 - **Elevator States**: Idle, Going Up, Going Down
 - **Request Formats**: 
-  - **Outer Requests**: `[floor#direction]` (e.g., `[3#u],[5#d]` for floor 3 going up, floor 5 going down)
-  - **Inner Requests**: Comma-separated floor numbers (e.g., `3,8,7,5`)
+- **Outer Requests**: `[floor#direction]` (e.g., `[3#u],[5#d]` for floor 3 going up, floor 5 going down)
+- **Inner Requests**: Comma-separated floor numbers (e.g., `3,8,7,5`)
 
-
-## 🚀 Getting Started
 
 ### Prerequisites
 
