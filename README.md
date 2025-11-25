@@ -45,7 +45,7 @@ This project simulates a smart elevator control system that efficiently handles 
    dotnet test
    ```
 
-## 📖 Usage Guide
+## 📖 User Guide
 
 ### Starting the Simulation
 The elevator initializes at floor 1 in an idle state and provides interactive prompts.
