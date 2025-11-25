@@ -7,9 +7,9 @@ public static class ElevatorInitializer
     public static void Main()
     {
         int currentFloor = 1;
-        int minFloor = 1;
-        int maxFloor = 10;
-        IElevator elevator = new Elevator(currentFloor, minFloor, maxFloor, IElevator.Status.idle);
+        const int MinFloor = 1;
+        const int MaxFloor = 10;
+        IElevator elevator = new Elevator(currentFloor, MinFloor, MaxFloor, IElevator.Status.idle);
         Console.WriteLine("Elevator Simulation Started.");
         IRequestHandler handler = new RequestHandler(elevator);
         handler.InitializeElevator();

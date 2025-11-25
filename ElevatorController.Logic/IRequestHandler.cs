@@ -11,6 +11,7 @@ namespace ElevatorController.Logic
         void CollectRequests();
 
         bool ProcessOuterRequest(string request);
+
         bool ProcessInnerRequest(string request);
 
     }

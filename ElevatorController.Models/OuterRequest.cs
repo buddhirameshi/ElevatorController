@@ -4,7 +4,6 @@ namespace ElevatorController.Models
 {
     public class OuterRequest
     {
-
         public OuterRequest(int source, string direction)
         {
             Key = $"{source}-{direction}";
@@ -15,7 +14,6 @@ namespace ElevatorController.Models
         public Direction SelectedDirection { get; set; }
 
         public enum Direction { Up, Down }
-
 
     }
 }
