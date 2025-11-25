@@ -12,8 +12,8 @@ namespace ElevatorController.Tests
 
         public ElevatorControllerLogicTests()
         {
-            int currentFloor = 0;
-            int minFloor = 0;
+            int currentFloor = 1;
+            int minFloor = 1;
             int maxFloor = 10;
             IElevator.Status currentStatus = IElevator.Status.idle;
             elevator = new Elevator(currentFloor, minFloor, maxFloor, currentStatus);
@@ -62,11 +62,11 @@ namespace ElevatorController.Tests
         public void Elevator_Should_Initialize_With_Correct_Values()
         {
             // Arrange & Act
-            var testElevator = new Elevator(5, 0, 10, IElevator.Status.goingUp);
+            var testElevator = new Elevator(5, 1, 10, IElevator.Status.goingUp);
 
             // Assert
             testElevator.CurrentFloor.Should().Be(5);
-            testElevator.MinFloor.Should().Be(0);
+            testElevator.MinFloor.Should().Be(1);
             testElevator.MaxFloor.Should().Be(10);
             testElevator.CurrentStatus.Should().Be(IElevator.Status.goingUp);
         }
