@@ -59,7 +59,7 @@ namespace ElevatorController.Logic
             int midFloor = (thisElevator.MinFloor + thisElevator.MaxFloor) / 2;
             if (updatedRequests != null && updatedRequests.Count > 0)
             {
-                Console.WriteLine("The updated requests are as follows.");
+                Console.WriteLine("The updated floor requests are as follows.");
                 foreach (int i in updatedRequests)
                 {
                     Console.WriteLine(i);

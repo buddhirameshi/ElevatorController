@@ -42,12 +42,13 @@ namespace ElevatorController.Models
         {
             Console.WriteLine("**********************");
             Console.WriteLine($"If you want to get in the lift enter the floor you are at right now and the direction that you wish to move. Ex: [3#u],[5#d]");
-            Console.WriteLine();
+            Console.WriteLine("If there are no requests, press enter to proceed.");
         }
 
         public void GetInnerRequests()
         {
-            Console.WriteLine($"Floor = {CurrentFloor}. Now that you are in,please enter the destination floors as a comma separated string. Ex: 3,8,7,8");
+            Console.WriteLine($"Floor = {CurrentFloor}. Now that you are in, please enter the destination floors as a comma separated string. Ex: 3,8,7,8");
+            Console.WriteLine("If there are no requests, press enter to proceed.");
             Console.WriteLine();
         }
 
