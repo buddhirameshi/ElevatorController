@@ -57,6 +57,7 @@ namespace ElevatorController.Models
             Console.WriteLine("**********************");
             Console.WriteLine();
             Console.WriteLine($"There are only {MaxFloor} floors. The highest floor is {MaxFloor} and the lowest floor is {MinFloor}");
+            Console.WriteLine($"Assumption: Ground floor and the floor {MinFloor} refers to the same floor.");
             Console.WriteLine($"The lift is {CurrentStatus} and currently at the floor number {CurrentFloor}");
             Console.WriteLine($"If you want to get in the lift, enter the floor you are at right now and the direction that you wish to move. Refer the following example.");
             Console.WriteLine("There is a request from the 3rd floor to go up");
