@@ -15,12 +15,11 @@ This project simulates a smart elevator control system that efficiently handles 
 
 ## 🏢 System Specifications
 
-- **Floor Range**: This is a 10 storey building from floor 1 (level1 or ground floor both refer the same floor) to 10 (top floor)
+- **Floor Range**: This is a 10-storey building from floor number 1 (level 1 or ground floor, both refer to the same floor) to 10 (top floor)
 - **Elevator States**: Idle, Going Up, Going Down
 - **Request Formats**: 
   - **Outer Requests**: `[floor#direction]` (e.g., `[3#u],[5#d]` for floor 3 going up, floor 5 going down)
   - **Inner Requests**: Comma-separated floor numbers (e.g., `3,8,7,5`)
-
 
 
 ## 🚀 Getting Started
@@ -35,7 +34,7 @@ This project simulates a smart elevator control system that efficiently handles 
 
 1. **Clone the repository:**
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/buddhirameshi/ElevatorController
    cd ElevatorController
    ```
 
@@ -62,7 +61,7 @@ This project simulates a smart elevator control system that efficiently handles 
 ## 📖 Usage Guide
 
 ### Starting the Simulation
-The elevator initializes at floor 0 in an idle state and provides interactive prompts.
+The elevator initializes at floor 1 in an idle state and provides interactive prompts.
 
 ### Making Outer Requests (Pickup Requests)
 Request pickup from multiple floors with directions:
@@ -82,10 +81,10 @@ Enter: 3,8,7,5
 ### Sample Interactive Session
 ```
 Elevator Simulation Started.
-Hello I'm the elevator controller
+Hello, I'm the elevator controller
 **********************
 The lift is idle and currently at floor number 1
-There are only 10 floors. The highest floor is 10 and the lowest floor is 1
+There are only 10 floors. The highest floor is 10, and the lowest floor is 1
 
 Enter requests: [3#u],[5#d]
 **********************
