@@ -226,7 +226,7 @@ namespace ElevatorController.Logic
                     if (!int.TryParse(details[0], out requestedFrom) || requestedFrom < thisElevator.MinFloor || requestedFrom > thisElevator.MaxFloor || (!string.Equals(direction, "u") && !string.Equals(direction, "d")) || (requestedFrom == thisElevator.MinFloor && string.Equals(direction, "d")) || (requestedFrom == thisElevator.MaxFloor && string.Equals(direction, "u")))
                     {
                         Console.WriteLine("Please enter a valid request in [3#d],[5#u],[8#u],[1#d] format");
-                        Console.WriteLine($"There are only {thisElevator.MaxFloor} floors. The highest floor is {thisElevator.MaxFloor} and the lowest floor is {thisElevator.MaxFloor}");
+                        Console.WriteLine($"There are only {thisElevator.MaxFloor} floors. The highest floor is {thisElevator.MaxFloor} and the lowest floor is {thisElevator.MinFloor}");
                         return isAdded;
                     }
 
@@ -288,7 +288,7 @@ namespace ElevatorController.Logic
                 if (!int.TryParse(requests[i], out requestedFrom) || requestedFrom < thisElevator.MinFloor || requestedFrom > thisElevator.MaxFloor)
                 {
                     Console.WriteLine("Please enter a valid request in 3,5,8,1 format");
-                    Console.WriteLine($"There are only {thisElevator.MaxFloor} floors. The highest floor is {thisElevator.MaxFloor} and the lowest floor is {thisElevator.MaxFloor}");
+                    Console.WriteLine($"There are only {thisElevator.MaxFloor} floors. The highest floor is {thisElevator.MaxFloor} and the lowest floor is {thisElevator.MinFloor}");
                     return isAdded;
                 }
                 if (!userReq.AllRequests.Any(x => x == requestedFrom))
